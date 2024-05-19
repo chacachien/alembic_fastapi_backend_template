@@ -1,0 +1,9 @@
+//create ignore git for my project 
+.env
+node_modules
+venv/
+api.http
+__pycache__/
+test_main.py 
+.pytest_cache/
+alembic_1
