@@ -5,21 +5,30 @@ This repository provides a basic template for building a REST API using FastAPI 
 ## Features
 
 - **FastAPI:** A modern, fast (high-performance), and easy-to-use web framework for building APIs.
-- **SQLAlchemy:** A powerful and flexible ORM (Object Relational Mapper) for interacting with databases.
 - **Alembic:** A database migration tool that allows you to safely and easily manage changes to your database schema.
 - **Poetry:** A dependency management and packaging tool for Python projects.
-- **Docker:** Included for easy setup and development in a containerized environment.
+- **SQLmodel:** It is the combination of SQLAlchemy and Pydantic.
 
 ## Project Structure
 
 ```
-├── src
-│   ├── main.py # Main application entry point
-│   └── db
-│       ├── base.py  # Base SQLAlchemy model definition
-│       └── models.py # Database models
-└──
-└──
+└── core
+    └── dependencies
+        └── db.py
+└── models
+    └── base.py
+└── api
+    └── __init__.py
+└── main.py
+└── db
+    └── __init__.py
+└── .gitignore
+└── .env
+└── poetry.lock
+└── pyproject.toml
+└── alembic.ini
+└── requirements.txt
+```
 
 ```
 
@@ -34,7 +43,7 @@ This repository provides a basic template for building a REST API using FastAPI 
 2. **Install Dependencies:**
 
    ```bash
-   cd backend-template
+   cd <Repo>
    poetry install
    ```
 
