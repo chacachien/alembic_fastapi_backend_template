@@ -30,7 +30,6 @@ This repository provides a basic template for building a REST API using FastAPI 
 └── requirements.txt
 ```
 
-```
 
 ## Getting Started
 
